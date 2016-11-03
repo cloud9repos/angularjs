@@ -1,0 +1,1412 @@
+<head>
+  
+<script type="text/javascript" src="https://bam.nr-data.net/1/fa45dcf839?a=151&amp;v=974.7d740e1&amp;to=dl8KQUReDl4AEE1TVVhZChpGQw1WEAEWQR4f&amp;rst=7353&amp;ref=https://angularjs-1-abhijais2.c9users.io/test.html&amp;qt=1&amp;ap=153&amp;be=3081&amp;fe=3455&amp;dc=2116&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1477600780692,%22n%22:0,%22u%22:2769,%22ue%22:2770,%22f%22:2,%22dn%22:5,%22dne%22:420,%22c%22:420,%22s%22:521,%22ce%22:1265,%22rq%22:1265,%22rp%22:2003,%22rpe%22:3384,%22dl%22:2789,%22di%22:5197,%22ds%22:5197,%22de%22:5416,%22dc%22:6536,%22l%22:6536,%22le%22:6538%7D,%22navigation%22:%7B%22ty%22:1%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-spa-974.min.js"></script><script type="text/javascript" async="" src="//cdn.shopify.com/s/javascripts/tricorder/trekkie.admin.min.js?v=2016.10.25.1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"fa45dcf839","applicationID":"151","transactionName":"dl8KQUReDl4AEE1TVVhZChpGQw1WEAEWQR4f","queueTime":1,"applicationTime":153,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQQUUFNS"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(19),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{h?h-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(20),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(p){"stack"in p&&(t(12),t(11),"addEventListener"in window&&t(6),s.xhrWrappable&&t(13),u=!0)}c.on("fn-start",function(t,e,n){u&&(h+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){N++,S=y.hash,this[u]=Date.now()}function o(){N--,y.hash!==S&&i(0,!0);var t=Date.now();this[l]=~~this[l]+t-this[u],this[h]=t}function i(t,e){x.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=Date.now()})}var c="-start",s="-end",f="-body",u="fn"+c,h="fn"+s,p="cb"+c,d="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location;if(w[v]){var g=t(9),b=t(10),x=t(8),E=t(6),T=t(12),O=t(7),P=t(13),R=t("ee"),D=R.get("tracer");t(14),t("loader").features.spa=!0;var S,M=w[v],N=0;R.on(u,r),R.on(p,r),R.on(h,o),R.on(d,o),R.buffer([u,h,"xhr-done","xhr-resolved"]),E.buffer([u]),T.buffer(["setTimeout"+s,"clearTimeout"+c,u]),P.buffer([u,"new-xhr","open-xhr"+c]),O.buffer([m+c,m+"-done",m+f+c,m+f+s]),x.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,d,"executor-err","resolve"+c]),D.buffer([u,"no-"+u]),a(P,"open-xhr"+c),a(R,"xhr-resolved"),a(R,"xhr-done"),a(O,m+c),a(O,m+"-done"),x.on("pushState-end",i),x.on("replaceState-end",i),M("hashchange",i,!0),M("load",i,!0),M("popstate",function(){i(0,N>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(12),c=t(11),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",h="bstResource",p="resource",d="-start",l="-end",m="fn"+d,v="fn"+l,w="bstTimer",y="pushState";t("loader").features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+d,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(h,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,h],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(21)(a),s=t("gos"),f=XMLHttpRequest,u="addEventListener",h="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=s(n,"nr@wrapped",function(){return c(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&c.inPlace(n,["handleEvent"],"fn-")}}),a.on(h+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(19);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,h=a.Response,p=a.fetch,d="prototype";u&&h&&p&&(i(f,function(t,e){r(u[d],e,s),r(h[d],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(21)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("mutation"),o=t(21)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],10:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(21),a=t("ee").get("promise"),c=i(a),s=t(19),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],11:[function(t,e,n){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],12:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(21)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",h="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+h),a.inPlace(window,[s],s+h),a.inPlace(window,[f,"clearImmediate"],f+h),i.on(s+u,r),i.on(c+u,o)},{}],13:[function(t,e,n){function r(t,e){h.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),h.inPlace(t,v,"fn-",c)}function i(t){w.push(t),l&&(g=-g,b.data=g)}function a(){for(var t=0;t<w.length;t++)r([],w[t]);w.length&&(w=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),h=t(21)(u),p=NREUM.o,d=p.XHR,l=p.MO,m="readystatechange",v=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],w=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new d(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(d,y),y.prototype=d.prototype,h.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var g=1,b=document.createTextNode(g);new l(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],14:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<h;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(15),f=t("ee"),u=["load","error","abort","timeout"],h=u.length,p=t("id"),d=t(18),l=t(17),m=window.XMLHttpRequest;a.features.xhr=!0,t(13),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,d&&(d>34||d<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<h;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],15:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],16:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(19),c=t(20),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],h="api-",p=h+"ixn-";a(u,function(t,e){f[e]=o(h+e,!0,"api")}),f.addPageAction=o(h+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],17:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],18:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],19:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],20:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],21:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(20),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){h([u,"",[r,a,o],c])}f(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(p){throw f(e+"err",[r,a,p],c),p}finally{f(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<n.length;s++)c=n[s],a=t[c],r(a)||(t[c]=e(a,f?c+o:o,i,c))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){h([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){h([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function h(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=p(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var u=f[v[n]];return u&&u.push([w,n,r,i]),i}function h(t,e){m[t]=p(t).concat(e)}function p(t){return m[t]||[]}function d(t){return u[t]=u[t]||o(n)}function l(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in f||(f[e]=[])})}var m={},v={},w={on:h,emit:n,get:d,listeners:p,context:e,buffer:l};return w}function i(){return new r}var a="nr@context",c=t("gos"),s=t(19),f={},u={},h=e.exports=o();h.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(v,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",c("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(19),f=window,u=f.document,h="addEventListener",p="attachEvent",d=f.XMLHttpRequest,l=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(16);var m=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-974.min.js"},w=d&&l&&l[h]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:w};u[h]?(u[h]("DOMContentLoaded",i,!1),f[h]("load",r,!1)):(u[p]("onreadystatechange",o),f[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,14,5,3,4]);</script>
+    <link rel="dns-prefetch preconnect" href="//cdn.shopify.com">
+    <link rel="dns-prefetch preconnect" href="//www.gravatar.com">
+    <link rel="dns-prefetch preconnect" href="//argus.chi2.shopify.io">
+    <link rel="dns-prefetch preconnect" href="//analytics.shopify.com">
+    <link rel="dns-prefetch preconnect" href="//stats.g.doubleclick.net">
+    <link rel="dns-prefetch preconnect" href="//www.google-analytics.com">
+    <link rel="dns-prefetch preconnect" href="//connect.facebook.net">
+    <link rel="dns-prefetch preconnect" href="//www.google.com">
+    <link rel="dns-prefetch preconnect" href="//www.facebook.com">
+    <link rel="dns-prefetch preconnect" href="//s3.amazonaws.com">
+    <link rel="dns-prefetch preconnect" href="//v.shopify.com">
+    <link rel="dns-prefetch preconnect" href="//b.siftscience.com">
+
+  <meta charset="utf-8">
+  <title>abhi-1 ~ Products ~ New ~ Shopify</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="icon" sizes="192x192" href="//cdn.shopify.com/s/assets/touch-icons/touch-icon-192x192-840b11274adbc510a1db23976759bd31ceee84ddbb36478d494a3a2cf19b5ae6.png">
+<link rel="shortcut icon" type="image/x-icon" href="//cdn.shopify.com/s/assets/favicon-4425e7970f1327bc362265f54e8c9c6a4e96385b3987760637977078e28ffe92.png">
+<link rel="apple-touch-startup-image" href="//cdn.shopify.com/s/assets/touch-icons/mobile-startup-564eed49b6c483b80796f529e05b4bf1d54e9cd9beeb0bb89b10d3c6a2282ea6.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//cdn.shopify.com/s/assets/touch-icons/icon-114x114-precomposed-79d1c57f01b233f016319dc4048d90524e9ce252c058a306ef9db2216ab26911.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//cdn.shopify.com/s/assets/touch-icons/icon-72x72-precomposed-584c35aa679456ab4e2f1cd971191498d7fecf7321b4ded8bae5c5a2c51176e3.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="//cdn.shopify.com/s/assets/touch-icons/icon-57x57-precomposed-49c0927bd56de30bc28439aed87097b7c8e41f2bb4f00661f01a00729c2a1b77.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ZK+VhvOEP+cnmglf7wKEBiO0uMuNOskas5+dNz3l9GMajnz1K36g/FKk39pr52SQ6o0lq8/8mFjAMT/ebaI0PA==">
+
+  <link rel="stylesheet" media="all" href="//cdn.shopify.com/s/assets/admin/style-bae06b934f9a03e12c3796a967cf544bc2ae66edf6fdba8282e438430f673e76.css" crossorigin="anonymous" data-turbolinks-track="admin-style-css" integrity="sha256-uuBrk0+aA+EsN5apZ89US8KuZu32/bqCguQ4Qw9nPnY=">
+  <link rel="stylesheet" media="print" href="//cdn.shopify.com/s/assets/admin/print-53ef50143230c84fe7af77612901bab82abe2a49b97f64c7e78e71e6c9a7eaf7.css" crossorigin="anonymous" data-turbolinks-track="admin-print-css" integrity="sha256-U+9QFDIwyE/nr3dhKQG6uCq+Kkm5f2TH545x5smn6vc=">
+
+  <meta name="shopify-admin-context" content="{&quot;shop&quot;:{&quot;settings&quot;:{&quot;shopName&quot;:&quot;abhi-1&quot;,&quot;timezone&quot;:&quot;(GMT+05:30) Asia\/Calcutta&quot;,&quot;timezone_offset&quot;:330,&quot;timezone_abbreviation&quot;:&quot;IST&quot;,&quot;tzinfo&quot;:&quot;Asia\/Calcutta&quot;,&quot;currency&quot;:&quot;INR&quot;,&quot;money_format&quot;:&quot;Rs. {{amount}}&quot;,&quot;money_symbol&quot;:&quot;Rs.&quot;,&quot;money_with_currency_format&quot;:&quot;Rs. {{amount}}&quot;,&quot;created_at&quot;:&quot;2016-10-06T03:54:30+05:30&quot;,&quot;defaultWeightUnit&quot;:&quot;kg&quot;},&quot;domain&quot;:&quot;abhi-1.myshopify.com&quot;},&quot;currentUser&quot;:{&quot;id&quot;:102310856,&quot;name&quot;:&quot;Abhishek Jaiswal&quot;,&quot;email&quot;:&quot;abhishekgjaiswal@gmail.com&quot;,&quot;accountOwner&quot;:true,&quot;accountAccess&quot;:&quot;Account owner&quot;,&quot;permissions&quot;:[&quot;full&quot;],&quot;isEmployee&quot;:false},&quot;argusUrl&quot;:&quot;wss:\/\/argus.chi2.shopify.io\/15297379\/register?token=WzE0Nzc2NDM2MjMsIjE1Mjk3Mzc5IixbImZ1bGwiXV0%3D--e8731e8b32e28e5e19468914df3bed9ae6bfa5ff&quot;,&quot;detectBrowser&quot;:false}">
+
+  <script src="//cdn.shopify.com/s/assets/admin/admin-bugsnag-edab853a8b9cc053bc2de77744aef66285240a837c96b7d1c1610388578a514b.js" data-turbolinks-track="admin-bugsnag" crossorigin="anonymous" integrity="sha256-7auFOoucwFO8Led3RK72YoUkCoN8lrfRwWEDiFeKUUs="></script>
+
+  <link rel="dns-prefetch preconnect" href="//checkout.shopifycs.com">
+
+  <script src="https://checkout.shopifycs.com/dist/card_fields.js" data-turbolinks-track="true"></script>
+
+<script src="//cdn.shopify.com/s/assets/admin/admin_jquery-b451b0d0d261ab84fb4b8a32ff73f43c1f06698fda496f192b02be3c8c3157db.js" data-turbolinks-track="admin_jquery" crossorigin="anonymous" integrity="sha256-tFGw0NJhq4T7S4oy/3P0PB8GaY/aSW8ZKwK+PIwxV9s="></script>
+<script src="//cdn.shopify.com/s/assets/admin/admin-vendors-home-5846ed4f9806c9a7e5a8b85a7b5668e049dc6ad6dd4a1fb205e8ad26debf9c84.js" data-turbolinks-track="admin-vendors-home" crossorigin="anonymous" integrity="sha256-WEbtT5gGyaflqLhae1Zo4EncatbdSh+yBeitJt6/nIQ="></script>
+<script src="//cdn.shopify.com/s/assets/admin/tnt-ba3e9a683adc53450c100367a13368e5934cef5563f0c9ef5504c6bc4043a271.js" data-turbolinks-track="admin-tnt" crossorigin="anonymous" integrity="sha256-uj6aaDrcU0UMEANnoTNo5ZNM71Vj8MnvVQTGvEBDonE="></script>
+<script src="//cdn.shopify.com/s/assets/admin/shopify-core-d8d626a00498eeeec45fa190a6a2fad11cf4da3c18ad85dd82a17f69cdfd6f7e.js" data-turbolinks-track="shopify-core" crossorigin="anonymous" integrity="sha256-2NYmoASY7u7EX6GQpqL60Rz02jwYrYXdgqF/ac39b34="></script>
+<script src="//cdn.shopify.com/s/assets/admin/shopify-home-ec9dc75f428a2b9cec39c818a4aff62eec9e70e266a6d7fef1e7489a4d86d4ee.js" data-turbolinks-track="shopify-home" crossorigin="anonymous" integrity="sha256-7J3HX0KKK5zsOcgYpK/2LuyecOJmptf+8edImk2G1O4="></script>
+
+  <script src="//cdn.shopify.com/s/assets/admin/admin-vendors-others-69270a55cfee8d1b555e681f23a422cdf885e3cb4ee1a0943659242f7caf57c4.js" data-turbolinks-track="admin-vendors-others" crossorigin="anonymous" integrity="sha256-aScKVc/ujRtVXmgfI6QizfiF48tO4aCUNlkkL3yvV8Q="></script>
+  <script src="//cdn.shopify.com/s/assets/admin/index-a8732c647ce08a98b7bc941bf7962bfa5786264c2c15f292a172b844e93abd54.js" data-turbolinks-track="admin-index" crossorigin="anonymous" integrity="sha256-qHMsZHzgipi3vJQb95Yr+leGJkwsFfKSoXK4ROk6vVQ="></script>
+
+  <script>
+//<![CDATA[
+
+  $.extend(Shopify.shop, {
+    feature_set: {
+      channels_nav: true
+    }
+  });
+
+//]]>
+</script>
+  
+
+
+<style type="text/css" id="qual_style-rg"></style><style type="text/css" id="qual_style-r3"></style></head>
+
+<div class="section">
+      <div class="next-layout--fixed-width next-layout--fixed-width--large">
+        
+
+
+<div class="next-grid next-grid--outer-grid">
+  <div class="next-grid__cell">
+
+    <div class="next-card">
+      <div class="section-content">
+        <div class="next-card__section">
+
+          <div class="next-input-wrapper"><label class="next-label" for="product-name">Title</label><input autofocus="autofocus" data-bind="product.title" id="product-name" placeholder="Short Sleeve T-Shirt" class="next-input" size="30" type="text" name="product[title]"></div>
+
+          <div class="next-input-wrapper">
+            <label class="next-label" for="product-body-html">Description</label>
+            
+            <div data-define="{descriptionRte: new Shopify.Rte(this, {resource: product, key: 'description'})}" data-context="descriptionRte">
+              <script data-define="{pasteWarningModal: new Shopify.Modal(this)}" type="text/html" class="modal_source">
+  <header>
+  <h2>Consider using keyboard shortcuts to paste your content</h2>
+  <a href="#" class="close-modal">×</a>
+</header>
+<div class="body clearfix">
+  <p class="ssb">You are using a browser that has limited support for pasting content from your mouse. You should consider using keyboard shortcuts to paste your content instead.</p>
+
+  <div class="clearfix">
+    <div class="span12 inner-left">
+      <label>On a Mac</label>
+      <p>Command (&#8984;) + V</p>
+    </div>
+    <div class="span12 inner-right">
+      <label>On Windows</label>
+      <p>Control (CTRL) + V</p>
+    </div>
+  </div>
+</div>
+<div class="buttons">
+  <a href="#" class="btn close-modal">OK</a>
+</div>
+
+</script>
+<div class="rte-toolbar for-code-view" style="display: none">
+  <div class="rtetools clearfix">
+    <div class="rtetools-buttons">
+      <ul class="segmented fr">
+        <li>
+          <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom tooltip-right-align rte-command-active" id="rte-show-editor" bind-event-click="toggleHTMLView()" aria-label="Show Editor" aria-pressed="true">
+            <span class="tooltip-container"><span class="tooltip-label">Show editor</span></span>
+            <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-html"></use></svg>
+</button>        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="next-input-wrapper"><label class="next-label helper--visually-hidden" for="product-description">Body html</label><textarea class="next-textarea s-none rte-plainview" id="product-description" name="product[body_html]" style="display: none;" aria-hidden="true"></textarea></div>
+
+<div class="editor-container" id="product-description_parent">
+  <div id="rte-title" class="helper--visually-hidden">Rich Text Editor</div>
+  <div class="rte-toolbar for-rich-view">
+    <div class="rte-compose-toolbar">
+      <div class="rtetools clearfix">
+        <div class="rtetools-buttons">
+          <ul class="segmented" aria-labelledby="rte-title">
+            <li>
+              <div class="next-popover__container">
+                  <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" aria-label="Text formatting">
+                    <span class="tooltip-container"><span class="tooltip-label">Formatting</span></span>
+                    <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-formatting"></use></svg>
+                    <svg class="next-icon next-icon--color-slate next-icon--size-10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-disclosure"></use></svg>
+</button><div class="next-popover next-popover--align-to-edge"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+                                <ul class="next-list next-list--compact">
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="formatBlock" data-rte-command-value="p">Paragraph</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="formatBlock" data-rte-command-value="h1">Heading 1</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="formatBlock" data-rte-command-value="h2">Heading 2</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="formatBlock" data-rte-command-value="h3">Heading 3</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="formatBlock" data-rte-command-value="h4">Heading 4</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="formatBlock" data-rte-command-value="h5">Heading 5</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="formatBlock" data-rte-command-value="h6">Heading 6</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="formatBlock" data-rte-command-value="blockquote">Blockquote</button>
+                  </li>
+                </ul>
+</div></div></div></div></div>            </li>
+            <li>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="bold" aria-label="Bold" aria-pressed="false">
+                <span class="tooltip-container"><span class="tooltip-label">Bold</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-bold"></use></svg>
+</button>            </li>
+            <li>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="italic" aria-label="Italic" aria-pressed="false">
+                <span class="tooltip-container"><span class="tooltip-label">Italic</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-italic"></use></svg>
+</button>            </li>
+            <li>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="underline" aria-label="Underline" aria-pressed="false">
+                <span class="tooltip-container"><span class="tooltip-label">Underline</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-underline"></use></svg>
+</button>            </li>
+          </ul>
+          <ul class="segmented">
+            <li>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="insertUnorderedList" aria-label="Bulleted list" aria-pressed="false">
+                <span class="tooltip-container"><span class="tooltip-label">Bulleted list</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-list"></use></svg>
+</button>            </li>
+            <li>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="insertOrderedList" aria-label="Numbered list" aria-pressed="false">
+                <span class="tooltip-container"><span class="tooltip-label">Numbered list</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-list-ordered"></use></svg>
+</button>            </li>
+            <li>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="outdent" aria-label="Outdent">
+                <span class="tooltip-container"><span class="tooltip-label">Outdent</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-outdent"></use></svg>
+</button>            </li>
+            <li>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="indent" aria-label="Indent">
+                <span class="tooltip-container"><span class="tooltip-label">Indent</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-indent"></use></svg>
+</button>            </li>
+          </ul>
+          <ul class="segmented">
+            <li>
+              <div class="next-popover__container">
+                  <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" aria-label="Alignment">
+                    <span class="tooltip-container"><span class="tooltip-label">Alignment</span></span>
+                    <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-justify"></use></svg>
+                    <svg class="next-icon next-icon--color-slate next-icon--size-10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-disclosure"></use></svg>
+</button><div class="next-popover next-popover--align-to-edge"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+                                <ul class="next-list next-list--compact">
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="justifyleft">Left align</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="justifycenter">Center align</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item" data-rte-command="justifyright">Right align</button>
+                  </li>
+                </ul>
+</div></div></div></div></div>            </li>
+            <li>
+              <div class="next-popover__container">
+                  <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" aria-label="Color">
+                    <span class="tooltip-container"><span class="tooltip-label">Color</span></span>
+                    <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-color"></use></svg>
+                    <svg class="next-icon next-icon--color-slate next-icon--size-10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-disclosure"></use></svg>
+</button><div class="next-popover next-popover--align-to-edge"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+                                <div class="next-popover__section next-popover__section--no-padding">
+                  <div class="rte-color-picker">
+                    <div class="rte-color-option-mask">
+                      <div class="rte-color-option-container show-text-color">
+                        <div class="rte-color-option text-color" tabindex="-1" aria-labelledby="rte-text-color-title">
+                          <h3 class="rte-color-picker-label next-heading next-heading--micro-uppercase-bordered" id="rte-text-color-title">Text color</h3>
+                          <div bind-event-click="changeForeColor(event)"><div class="rte-colors">
+  <button name="" type="button" class="rte-color" data-color="rgb(0, 0, 0)" style="background-color: rgb(0, 0, 0);" aria-label="Color Black"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(68, 68, 68)" style="background-color: rgb(68, 68, 68);" aria-label="Color Charcoal, hue Grey"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(102, 102, 102)" style="background-color: rgb(102, 102, 102);" aria-label="Color Dim Gray, hue Grey"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(153, 153, 153)" style="background-color: rgb(153, 153, 153);" aria-label="Color Nobel, hue Grey"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(204, 204, 204)" style="background-color: rgb(204, 204, 204);" aria-label="Color Very Light Grey, hue Grey"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(238, 238, 238)" style="background-color: rgb(238, 238, 238);" aria-label="Color White Smoke, hue White"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(243, 243, 243)" style="background-color: rgb(243, 243, 243);" aria-label="Color White Smoke Light, hue White"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 255, 255)" style="background-color: rgb(255, 255, 255);" aria-label="Color White"></button>
+</div>
+
+<div class="rte-colors">
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 0, 0)" style="background-color: rgb(255, 0, 0);" aria-label="Color Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 153, 0)" style="background-color: rgb(255, 153, 0);" aria-label="Color Orange Peel, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 255, 0)" style="background-color: rgb(255, 255, 0);" aria-label="Color Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(0, 255, 0)" style="background-color: rgb(0, 255, 0);" aria-label="Color Lime, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(0, 255, 255)" style="background-color: rgb(0, 255, 255);" aria-label="Color Aqua, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(0, 0, 255)" style="background-color: rgb(0, 0, 255);" aria-label="Color Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(153, 0, 255)" style="background-color: rgb(153, 0, 255);" aria-label="Color Electric Purple, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 0, 255)" style="background-color: rgb(255, 0, 255);" aria-label="Color Magenta, hue Violet"></button>
+</div>
+
+<div class="rte-colors">
+  <button name="" type="button" class="rte-color" data-color="rgb(244, 204, 204)" style="background-color: rgb(244, 204, 204);" aria-label="Color Coral Candy, hue Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(252, 229, 205)" style="background-color: rgb(252, 229, 205);" aria-label="Color Serenade, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 242, 204)" style="background-color: rgb(255, 242, 204);" aria-label="Color Blanched Almond, hue Brown"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(217, 234, 211)" style="background-color: rgb(217, 234, 211);" aria-label="Color Peppermint, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(208, 224, 227)" style="background-color: rgb(208, 224, 227);" aria-label="Color Iceberg, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(207, 226, 243)" style="background-color: rgb(207, 226, 243);" aria-label="Color Onahau, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(217, 210, 233)" style="background-color: rgb(217, 210, 233);" aria-label="Color Blue Chalk, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(234, 209, 220)" style="background-color: rgb(234, 209, 220);" aria-label="Color Vanilla Ice, hue Red"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(234, 153, 153)" style="background-color: rgb(234, 153, 153);" aria-label="Color Tonys Pink, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(249, 203, 156)" style="background-color: rgb(249, 203, 156);" aria-label="Color Apricot, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 229, 153)" style="background-color: rgb(255, 229, 153);" aria-label="Color Cream Brulee, hue Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(182, 215, 168)" style="background-color: rgb(182, 215, 168);" aria-label="Color Moss Green, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(162, 196, 201)" style="background-color: rgb(162, 196, 201);" aria-label="Color Shadow Green, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(159, 197, 232)" style="background-color: rgb(159, 197, 232);" aria-label="Color Sail, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(180, 167, 214)" style="background-color: rgb(180, 167, 214);" aria-label="Color Biloba Flower, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(213, 166, 189)" style="background-color: rgb(213, 166, 189);" aria-label="Color Melanie, hue Red"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(224, 102, 102)" style="background-color: rgb(224, 102, 102);" aria-label="Color Froly, hue Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(246, 178, 107)" style="background-color: rgb(246, 178, 107);" aria-label="Color Tacao, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 217, 102)" style="background-color: rgb(255, 217, 102);" aria-label="Color Dandelion, hue Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(147, 196, 125)" style="background-color: rgb(147, 196, 125);" aria-label="Color Olivine, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(118, 165, 175)" style="background-color: rgb(118, 165, 175);" aria-label="Color Neptune, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(111, 168, 220)" style="background-color: rgb(111, 168, 220);" aria-label="Color Jordy Blue, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(142, 124, 195)" style="background-color: rgb(142, 124, 195);" aria-label="Color Moody Blue, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(194, 123, 160)" style="background-color: rgb(194, 123, 160);" aria-label="Color Puce, hue Red"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(204, 0, 0)" style="background-color: rgb(204, 0, 0);" aria-label="Color Free Speech Red, hue Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(230, 145, 56)" style="background-color: rgb(230, 145, 56);" aria-label="Color California, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(241, 194, 50)" style="background-color: rgb(241, 194, 50);" aria-label="Color Saffron, hue Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(106, 168, 79)" style="background-color: rgb(106, 168, 79);" aria-label="Color Apple, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(69, 129, 142)" style="background-color: rgb(69, 129, 142);" aria-label="Color Jelly Bean, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(61, 133, 198)" style="background-color: rgb(61, 133, 198);" aria-label="Color Curious Blue, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(103, 78, 167)" style="background-color: rgb(103, 78, 167);" aria-label="Color Studio, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(166, 77, 121)" style="background-color: rgb(166, 77, 121);" aria-label="Color Royal Heath, hue Red"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(153, 0, 0)" style="background-color: rgb(153, 0, 0);" aria-label="Color Sangria, hue Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(180, 95, 6)" style="background-color: rgb(180, 95, 6);" aria-label="Color Tawny, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(191, 144, 0)" style="background-color: rgb(191, 144, 0);" aria-label="Color Dark Goldenrod, hue Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(56, 118, 29)" style="background-color: rgb(56, 118, 29);" aria-label="Color Bilbao, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(19, 79, 92)" style="background-color: rgb(19, 79, 92);" aria-label="Color Blue Stone, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(11, 83, 148)" style="background-color: rgb(11, 83, 148);" aria-label="Color Dark Cerulean, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(53, 28, 117)" style="background-color: rgb(53, 28, 117);" aria-label="Color Midnight Blue, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(116, 27, 71)" style="background-color: rgb(116, 27, 71);" aria-label="Color Pompadour, hue Violet"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(102, 0, 0)" style="background-color: rgb(102, 0, 0);" aria-label="Color Maroon, hue Brown"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(120, 63, 4)" style="background-color: rgb(120, 63, 4);" aria-label="Color Saddle Brown, hue Brown"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(127, 96, 0)" style="background-color: rgb(127, 96, 0);" aria-label="Color Olive, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(39, 78, 19)" style="background-color: rgb(39, 78, 19);" aria-label="Color Verdun Green, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(12, 52, 61)" style="background-color: rgb(12, 52, 61);" aria-label="Color Cyprus, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(7, 55, 99)" style="background-color: rgb(7, 55, 99);" aria-label="Color Sapphire, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(32, 18, 77)" style="background-color: rgb(32, 18, 77);" aria-label="Color Midnight Blue, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(76, 17, 48)" style="background-color: rgb(76, 17, 48);" aria-label="Color Pohutukawa, hue Red"></button>
+</div>
+</div>
+                          <ul class="unstyled">
+                            <li>
+                              <button name="" type="button" class="btn btn-link btn-slim rte-color-picker-toggle" data-bind-event-click="toggleBackColorPicker(event)">
+                                <span class="helper--visually-hidden">Choose</span> Background color
+</button>                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="rte-color-option bg-color" tabindex="-1" aria-labelledby="rte-bgt-color-title">
+                          <h3 class="rte-color-picker-label next-heading next-heading--micro-uppercase-bordered" id="rte-bg-color-title">Background color</h3>
+                          <div bind-event-click="changeBackColor(event)"><div class="rte-colors">
+  <button name="" type="button" class="rte-color" data-color="rgb(0, 0, 0)" style="background-color: rgb(0, 0, 0);" aria-label="Color Black"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(68, 68, 68)" style="background-color: rgb(68, 68, 68);" aria-label="Color Charcoal, hue Grey"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(102, 102, 102)" style="background-color: rgb(102, 102, 102);" aria-label="Color Dim Gray, hue Grey"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(153, 153, 153)" style="background-color: rgb(153, 153, 153);" aria-label="Color Nobel, hue Grey"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(204, 204, 204)" style="background-color: rgb(204, 204, 204);" aria-label="Color Very Light Grey, hue Grey"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(238, 238, 238)" style="background-color: rgb(238, 238, 238);" aria-label="Color White Smoke, hue White"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(243, 243, 243)" style="background-color: rgb(243, 243, 243);" aria-label="Color White Smoke Light, hue White"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 255, 255)" style="background-color: rgb(255, 255, 255);" aria-label="Color White"></button>
+</div>
+
+<div class="rte-colors">
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 0, 0)" style="background-color: rgb(255, 0, 0);" aria-label="Color Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 153, 0)" style="background-color: rgb(255, 153, 0);" aria-label="Color Orange Peel, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 255, 0)" style="background-color: rgb(255, 255, 0);" aria-label="Color Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(0, 255, 0)" style="background-color: rgb(0, 255, 0);" aria-label="Color Lime, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(0, 255, 255)" style="background-color: rgb(0, 255, 255);" aria-label="Color Aqua, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(0, 0, 255)" style="background-color: rgb(0, 0, 255);" aria-label="Color Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(153, 0, 255)" style="background-color: rgb(153, 0, 255);" aria-label="Color Electric Purple, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 0, 255)" style="background-color: rgb(255, 0, 255);" aria-label="Color Magenta, hue Violet"></button>
+</div>
+
+<div class="rte-colors">
+  <button name="" type="button" class="rte-color" data-color="rgb(244, 204, 204)" style="background-color: rgb(244, 204, 204);" aria-label="Color Coral Candy, hue Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(252, 229, 205)" style="background-color: rgb(252, 229, 205);" aria-label="Color Serenade, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 242, 204)" style="background-color: rgb(255, 242, 204);" aria-label="Color Blanched Almond, hue Brown"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(217, 234, 211)" style="background-color: rgb(217, 234, 211);" aria-label="Color Peppermint, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(208, 224, 227)" style="background-color: rgb(208, 224, 227);" aria-label="Color Iceberg, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(207, 226, 243)" style="background-color: rgb(207, 226, 243);" aria-label="Color Onahau, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(217, 210, 233)" style="background-color: rgb(217, 210, 233);" aria-label="Color Blue Chalk, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(234, 209, 220)" style="background-color: rgb(234, 209, 220);" aria-label="Color Vanilla Ice, hue Red"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(234, 153, 153)" style="background-color: rgb(234, 153, 153);" aria-label="Color Tonys Pink, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(249, 203, 156)" style="background-color: rgb(249, 203, 156);" aria-label="Color Apricot, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 229, 153)" style="background-color: rgb(255, 229, 153);" aria-label="Color Cream Brulee, hue Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(182, 215, 168)" style="background-color: rgb(182, 215, 168);" aria-label="Color Moss Green, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(162, 196, 201)" style="background-color: rgb(162, 196, 201);" aria-label="Color Shadow Green, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(159, 197, 232)" style="background-color: rgb(159, 197, 232);" aria-label="Color Sail, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(180, 167, 214)" style="background-color: rgb(180, 167, 214);" aria-label="Color Biloba Flower, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(213, 166, 189)" style="background-color: rgb(213, 166, 189);" aria-label="Color Melanie, hue Red"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(224, 102, 102)" style="background-color: rgb(224, 102, 102);" aria-label="Color Froly, hue Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(246, 178, 107)" style="background-color: rgb(246, 178, 107);" aria-label="Color Tacao, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(255, 217, 102)" style="background-color: rgb(255, 217, 102);" aria-label="Color Dandelion, hue Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(147, 196, 125)" style="background-color: rgb(147, 196, 125);" aria-label="Color Olivine, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(118, 165, 175)" style="background-color: rgb(118, 165, 175);" aria-label="Color Neptune, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(111, 168, 220)" style="background-color: rgb(111, 168, 220);" aria-label="Color Jordy Blue, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(142, 124, 195)" style="background-color: rgb(142, 124, 195);" aria-label="Color Moody Blue, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(194, 123, 160)" style="background-color: rgb(194, 123, 160);" aria-label="Color Puce, hue Red"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(204, 0, 0)" style="background-color: rgb(204, 0, 0);" aria-label="Color Free Speech Red, hue Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(230, 145, 56)" style="background-color: rgb(230, 145, 56);" aria-label="Color California, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(241, 194, 50)" style="background-color: rgb(241, 194, 50);" aria-label="Color Saffron, hue Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(106, 168, 79)" style="background-color: rgb(106, 168, 79);" aria-label="Color Apple, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(69, 129, 142)" style="background-color: rgb(69, 129, 142);" aria-label="Color Jelly Bean, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(61, 133, 198)" style="background-color: rgb(61, 133, 198);" aria-label="Color Curious Blue, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(103, 78, 167)" style="background-color: rgb(103, 78, 167);" aria-label="Color Studio, hue Violet"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(166, 77, 121)" style="background-color: rgb(166, 77, 121);" aria-label="Color Royal Heath, hue Red"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(153, 0, 0)" style="background-color: rgb(153, 0, 0);" aria-label="Color Sangria, hue Red"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(180, 95, 6)" style="background-color: rgb(180, 95, 6);" aria-label="Color Tawny, hue Orange"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(191, 144, 0)" style="background-color: rgb(191, 144, 0);" aria-label="Color Dark Goldenrod, hue Yellow"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(56, 118, 29)" style="background-color: rgb(56, 118, 29);" aria-label="Color Bilbao, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(19, 79, 92)" style="background-color: rgb(19, 79, 92);" aria-label="Color Blue Stone, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(11, 83, 148)" style="background-color: rgb(11, 83, 148);" aria-label="Color Dark Cerulean, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(53, 28, 117)" style="background-color: rgb(53, 28, 117);" aria-label="Color Midnight Blue, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(116, 27, 71)" style="background-color: rgb(116, 27, 71);" aria-label="Color Pompadour, hue Violet"></button>
+
+  <button name="" type="button" class="rte-color" data-color="rgb(102, 0, 0)" style="background-color: rgb(102, 0, 0);" aria-label="Color Maroon, hue Brown"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(120, 63, 4)" style="background-color: rgb(120, 63, 4);" aria-label="Color Saddle Brown, hue Brown"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(127, 96, 0)" style="background-color: rgb(127, 96, 0);" aria-label="Color Olive, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(39, 78, 19)" style="background-color: rgb(39, 78, 19);" aria-label="Color Verdun Green, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(12, 52, 61)" style="background-color: rgb(12, 52, 61);" aria-label="Color Cyprus, hue Green"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(7, 55, 99)" style="background-color: rgb(7, 55, 99);" aria-label="Color Sapphire, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(32, 18, 77)" style="background-color: rgb(32, 18, 77);" aria-label="Color Midnight Blue, hue Blue"></button>
+  <button name="" type="button" class="rte-color" data-color="rgb(76, 17, 48)" style="background-color: rgb(76, 17, 48);" aria-label="Color Pohutukawa, hue Red"></button>
+</div>
+</div>
+                          <ul class="unstyled">
+                            <li>
+                              <button name="" type="button" class="btn btn-link btn-slim rte-color-picker-toggle" data-bind-event-click="toggleBackColorPicker(event)">
+                                <span class="helper--visually-hidden">Choose</span> Text color
+</button>                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+</div></div></div></div></div></div>            </li>
+          </ul>
+          <button name="" type="button" class="btn rte-tools__source-btn btn-slim tooltip tooltip-bottom tooltip-right-align" id="rte-show-html" bind-event-click="toggleHTMLView()" aria-label="Show HTML" aria-pressed="false">
+            <span class="tooltip-container"><span class="tooltip-label">Show HTML</span></span>
+            <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-html"></use></svg>
+</button>          <ul class="segmented">
+            <li>
+              <script data-define="{ editLinkModal: new Shopify.Rte.EditLinkModal(this, $context) }" type="text/html" class="modal_source">
+                <header>
+  <h2 bind="dialogTitle"></h2>
+  <a href="#" class="close-modal">x</a>
+</header>
+<div class="body">
+
+  <div class="row">
+    <div class="span15 inner-left">
+      <label for="link-path">Link to</label>
+      <input class="sb" id="link-path" type="text" bind="linkAttributes.href" placeholder="http://" autocorrect="off" autocapitalize="none" spellcheck="false" autofocus>
+      <p class="type--subdued">http:// is required for external links</p>
+    </div>
+
+    <div class="span7 inner-right">
+      <label for="link-target">Open this link in</label>
+      <select id="link-target" bind="linkAttributes.target">
+        <option value="">the same window</option>
+        <option value="_blank">a new window</option>
+      </select>
+    </div>
+  </div>
+
+  <label for="link-title">Link title</label>
+  <input class="sb" id="link-title" type="text" bind="linkAttributes.title" />
+  <p class="type--subdued">Used for accessibility and SEO</p>
+</div>
+
+<div class="buttons">
+  <a bind-show="link" class="btn btn-destroy fl close-modal" bind-event-click="removeLink()">Remove link</a>
+  <button name="button" type="button" class="btn close-modal">Cancel</button>
+  <button class="btn btn-primary" bind-event-click="updateLink()" bind="dialogTitle"></button>
+</div>
+
+</script>              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom next-input--is-disabled" data-rte-command="link" bind-event-click="editLinkModal.show()" data-focus="link-path" aria-label="Insert link" disabled="disabled" aria-pressed="false">
+                <span class="tooltip-container"><span class="tooltip-label">Insert link</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-link"></use></svg>
+</button>            </li>
+
+            <li>
+              <div class="next-popover__container">
+                  <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" aria-label="Insert table">
+                    <span class="tooltip-container"><span class="tooltip-label">Insert table</span></span>
+                    <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-table"></use></svg>
+                    <svg class="next-icon next-icon--color-slate next-icon--size-10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-disclosure"></use></svg>
+</button><div class="next-popover next-popover--half-spacing next-popover--align-to-edge"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+                                <ul class="next-list next-list--compact">
+                  <li>
+                    <button name="" type="button" class="next-list__item" bind-event-click="createTable()">Insert table</button>
+                  </li>
+                </ul>
+                <ul class="next-list next-list--compact js-rte-table-editing">
+                  <li>
+                    <button name="" type="button" class="next-list__item is-disabled" data-rte-command="mceTableInsertRowBefore" disabled="disabled">Insert row above</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item is-disabled" data-rte-command="mceTableInsertRowAfter" disabled="disabled">Insert row below</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item is-disabled" data-rte-command="mceTableInsertColBefore" disabled="disabled">Insert column before</button>
+                  </li><li>
+                    <button name="" type="button" class="next-list__item is-disabled" data-rte-command="mceTableInsertColAfter" disabled="disabled">Insert column after</button>
+                  </li>
+                </ul>
+                <ul class="next-list next-list--compact js-rte-table-editing">
+                  <li>
+                    <button name="" type="button" class="next-list__item is-disabled" data-rte-command="mceTableDeleteRow" disabled="disabled">Delete row</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item is-disabled" data-rte-command="mceTableDeleteCol" disabled="disabled">Delete column</button>
+                  </li>
+                  <li>
+                    <button name="" type="button" class="next-list__item is-disabled" data-rte-command="mceTableDelete" disabled="disabled">Delete table</button>
+                  </li>
+                </ul>
+</div></div></div></div></div>            </li>
+
+            <li>
+              <a href="/admin/rte" data-define="{ insertImageModal: new Shopify.Rte.InsertImageModal(this, $context) }" type="text/html" class="modal_source" style="display: none"></a>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="image" data-modal-view="RteAssetsView" bind-event-click="insertImageModal.show()" aria-label="Insert image" aria-pressed="false">
+                <span class="tooltip-container"><span class="tooltip-label" bind="imageButtonText">Insert image</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-image"></use></svg>
+</button>            </li>
+
+            <li>
+              <script data-define="{ insertVideoModal: new Shopify.Rte.InsertVideoModal(this, $context) }" type="text/html" class="modal_source">
+                <header>
+  <h2 bind="dialogTitle"></h2>
+  <a href="#" class="close-modal">x</a>
+</header>
+<form bind-event-submit="insertVideo(event)">
+  <div class="body">
+    <p>Insert a video by pasting the embed snippet in the box below.</p>
+    <p class="sb type--subdued">The embed snippet usually starts with "&lt;iframe &hellip;"</p>
+    <textarea id="insert-video-snippet" bind="videoCode"></textarea>
+  </div>
+  <div class="buttons">
+    <a class="btn close-modal">Cancel</a>
+    <button class="btn btn-primary" bind="dialogTitle"></button>
+  </div>
+</form>
+
+</script>              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="video" bind-event-click="insertVideoModal.show()" data-focus="insert-video-snippet" aria-label="Insert video" aria-pressed="false">
+                <span class="tooltip-container"><span class="tooltip-label">Insert video</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-camera"></use></svg>
+</button>            </li>
+
+            <li>
+              <button name="" type="button" class="btn btn-slim tooltip tooltip-bottom" data-rte-command="removeformat" aria-label="Clear formatting">
+                <span class="tooltip-container"><span class="tooltip-label">Clear formatting</span></span>
+                <svg class="next-icon next-icon--color-slate next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#rte-clear"></use></svg>
+</button>            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="rte-sandbox" data-bind-class="{'is-focused': isFocused}" id="product-description_iframecontainer"><iframe id="product-description_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help" src='javascript:""' style="width: 100%; height: 150px; display: block;"></iframe></div>
+</div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="next-card images">
+      <script type="text/template" id="image-error-message-template">
+  <li class="js-image-error-message">"{{= filename }}" {{= error }}</li>
+</script>
+
+<script type="text/template" id="js-template">
+  <li id="{{= id }}" class="product-photo-grid__item">
+    <div class="aspect-ratio aspect-ratio--square">
+      <img class="aspect-ratio__content" src="{{= dataUrl }}" />
+      <div class="product-photo-loading-overlay" data-bind-show="isUploading()">
+        <div class="next-grid next-grid--center-both next-grid--no-padding" style="height: 100%">
+          <div class="next-grid__cell next-grid__cell--no-flex">
+
+            <div class="next-spinner" data-bind-class="{'next-spinner--is-successful': uploadProgress('{{= id }}') == Shopify.ImageUploader.DONE, 'next-spinner--is-failed': uploadProgress('{{= id }}') == Shopify.ImageUploader.FAILED}">
+              <svg class="next-icon next-icon--40 next-spinner__status next-spinner__status--successful" preserveAspectRatio="xMinYMin">
+                <circle class="next-spinner__status__background" cx="50%" cy="50%" r="50%" />
+                <path class="next-spinner__status__icon" d="M30.8,13L16.9,26.9c-0.3,0.3-0.9,0.3-1.2,0l-6.5-6.5" fill="none" />
+              </svg>
+              <svg class="next-icon next-icon--40 next-spinner__status next-spinner__status--failed" viewBox="0 0 40 40" preserveAspectRatio="xMinYMin">
+                <circle class="next-spinner__status__background" cx="50%" cy="50%" r="50%" />
+                <g class="next-spinner__status__icon">
+                  <line x1="27" y1="13" x2="13" y2="27" stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="27" y1="27" x2="13" y2="13" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+              <svg class="next-icon next-icon--40" preserveAspectRatio="xMinYMin">
+                <circle class="next-spinner__ring" cx="50%" cy="50%" r="45%" role="presentation" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="product-photo-hover-overlay drag" data-bind-show="!isUploading()">
+        <ul class="photo-overlay-actions">
+          <li>
+            <a data-bind-event-click="showImageModalForImage('{{= id }}')" class="photo-overlay-actions__link image-action tooltip tooltip-top">
+              <svg class="next-icon next-icon--color-white next-icon--size-16"><use xlink:href="#next-preview" /></svg>
+              <span class="tooltip-container"><span class="tooltip-label">Preview</span></span>
+            </a>
+          </li>
+          <li>
+            <a data-bind-event-click="showEditAltTextModalForImage('{{= id }}')" class="photo-overlay-actions__link image-action tooltip tooltip-top">
+              <svg class="next-icon next-icon--color-white next-icon--size-16"><use xlink:href="#next-alt-text" /></svg>
+              <span class="tooltip-container"><span class="tooltip-label">Edit alt text</span></span>
+            </a>
+          </li>
+          <li>
+            <a data-bind-event-click="deleteImage('{{= id }}')" class="photo-overlay-actions__link image-action tooltip tooltip-top">
+              <svg class="next-icon next-icon--color-white next-icon--size-16"><use xlink:href="#next-delete" /></svg>
+              <span class="tooltip-container"><span class="tooltip-label">Delete</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+</script>
+
+  <script data-define="{editImageAltImage_createPage: new Shopify.Modal(this)}" type="text/html" class="modal_source"><header>
+  <h2>Edit image alt text</h2>
+  <a href="#" class="close-modal">×</a>
+</header>
+<form>
+  <div class="body clearfix">
+    <div class="next-grid next-grid--no-outside-padding next-grid--vertically-centered">
+      <div class="next-grid__cell next-grid__cell--quarter">
+        <div class="aspect-ratio aspect-ratio--square">
+          <img data-bind-src="src" class="aspect-ratio__content">
+        </div>
+      </div>
+      <div class="next-grid__cell">
+        <div class="next-input-wrapper">
+          <label class="next-label" for="image-alt-text">Image alt text</label>
+          <input class="next-input"  id="image-alt-text" name="alt" data-define="{ newAlt: alt }" data-bind="newAlt">
+          <p class="type--subdued st">Write a brief description of this image to improve search engine optimization (SEO) and accessibility for visually impaired customers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a class="btn close-modal" href="#">Cancel</a>
+    <input type="submit" class="btn btn-primary js-btn-primary close-modal" data-bind-event-click="alt = newAlt, newAlt = ''" value="Done" />
+  </div>
+</form>
+</script>
+  <script data-define="{showImageModal: new Shopify.Modal(this)}" type="text/html" class="modal_source"><div class="body clearfix">
+    <img data-bind-src="src" class="modal-image">
+</div>
+<div class="buttons">
+  <a class="btn close-modal" href="#">Done</a>
+</div>
+</script>
+
+  <div data-define="{ imageActions: new Shopify.ProductCreateImageActions(this, $context) }" data-context="imageActions" id="product-images-content" data-tg-refresh="product-images-content" data-bind-event-dragenter="imageActions.startDrag(event)" data-bind-event-dragover="imageActions.dragOver(event)" data-bind-event-dragleave="imageActions.cancelDrag(event)" data-bind-event-drop="imageActions.dropFile(event)">
+
+    <header class="next-card__header">
+      <div class="next-grid next-grid--no-padding next-grid--vertically-centered">
+        <div class="next-grid__cell">
+          <h2 class="next-heading">Images</h2>
+        </div>
+        <div class="next-grid__cell next-grid__cell--no-flex" data-bind-show="!isUploading()">
+          <div class="next-grid next-grid--no-outside-padding next-grid--vertically-centered">
+            <div class="next-grid__cell next-grid__cell--no-flex">
+              <div class="styled-file-input">
+                <div class="btn btn--link">
+                  <label>Upload image</label>
+                  <input type="file" data-bind-event-change="fileInputChanged(event, this)" multiple="" accept="image/*" class="js-no-dirty">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+  
+    <div class="ui-banner ui-banner--status-warning hide" data-bind-show="hasErrors()"><div class="ui-banner__ribbon"><svg class="next-icon next-icon--size-24 next-icon--no-nudge"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-alert"></use></svg></div><div class="ui-banner__content"><div class="wrappable wrappable--vertically-centered"><div class="wrappable__item"><h2 class="ui-banner__title">The following images could not be added:</h2>
+    <ul id="product-image-errors"></ul>
+</div><div class="wrappable__item wrappable__item--no-flex"><div class="button-group">
+    <label class="btn btn--outline" for="image-upload">
+      Try another image
+    </label>
+</div></div></div></div></div>
+
+    <div class="next-card__section">
+      <div class="next-upload-dropzone__wrapper">
+        <ol id="product-images" class="product-photo-grid product-photo-grid--is-showing-all clearfix hide" data-bind-show="hasImages() || isUploading()"></ol>
+
+        <div data-bind-show="(dragging() || !hasImages()) &amp;&amp; !isUploading()">
+          <div class="next-upload-dropzone" data-bind-class="{
+            'next-upload-dropzone--active': dragging() &amp;&amp; !hasImages(),
+            'next-upload-dropzone--overlay next-upload-dropzone--active': dragging() &amp;&amp; hasImages()}">
+            <div class="next-upload-dropzone__hit-area next-upload-dropzone__hit-area--padded">
+
+  <svg class="next-icon next-icon--size-80 next-upload-dropzone__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-photos-80"></use></svg>
+
+  <h3 class="next-heading next-heading--no-margin next-upload-dropzone__heading">
+    <div data-bind-show="!dragging" class="styled-file-input hide">
+      Add images<input type="file" data-bind-event-change="fileInputChanged(event, this)" multiple="" accept="image/*" class="js-no-dirty">
+       or drag and drop to upload
+    </div>
+    <div data-bind-show="dragging" aria-hidden="true">
+      Drop files to upload
+    </div>
+  </h3>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+    </div>
+
+      <script type="text/template" id="option-table-row-new">
+  <tr class="options" data-bind-attribute="{'data-tg-remote-noserialize': !hasVariants() }">
+    <td>
+      <div class="next-input-wrapper">
+        <div class="next-popover__container next-popover__container--full-width" data-define="{'optionAutocomplete': new Shopify.ProductOptionsAutocomplete(this, {{= option.position - 1 }}, $(node), productOptions, {maxLength: maxOptionNameLength})}" data-context="optionAutocomplete">
+
+          <div class="relative">
+            <input class="next-input js-option-name" name="product[options][][name]" type="text" data-bind="input" data-bind-event-keyup="inputChanged()" value="{{= option.name }}">
+
+            <div class="tooltip-error attached-to-bottom" data-bind-show="errorMessage">
+              <ul class="error-list">
+                <li data-bind="errorMessage"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="next-popover next-popover--full-width" data-popover-horizontally-relative-to-closest=".next-card">
+            <div class="next-popover__tooltip"></div>
+            <div class="next-popover__content-wrapper">
+              <div class="next-popover__content">
+                <div class="next-popover__pane">
+                  <ul class="js-autocomplete-suggestions next-list next-list--compact next-list--toggles"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </td>
+    <input type="hidden" name="product[options][][position]" value="{{= option.position }}">
+    <td>
+      <div class="tokenized relative js-option-value-list">
+        <ul class="next-token-list next-token-list--is-input tokenized-product-options option-{{= option.position }}" tagit>
+          {{ _.each(option.values, function(value) { }}
+            <li>{{= value }}</li>
+          {{ }) }}
+        </ul>
+        <div class="tooltip-error attached-to-bottom" data-bind-show="tagits[{{= option.position - 1 }}].errorMessage">
+          <ul class="error-list">
+            <li data-bind="tagits[{{= option.position - 1 }}].errorMessage"></li>
+          </ul>
+        </div>
+      </div>
+    </td>
+    <td class="p-none remove">
+      <a data-bind-event-click="deleteOption({{= option.position }})" class="remove-option btn btn--icon tooltip tooltip-bottom" data-bind-show="canDeleteOption({{= option.position }})">
+        <span class="tooltip-container"><span class="tooltip-label">Remove</span></span>
+        <svg class="next-icon next-icon--color-blue next-icon--size-12"><use xlink:href="#next-delete" /></svg>
+      </a>
+    </td>
+  </tr>
+</script>
+
+<script type="text/template" id="variants-table-row">
+  <tr data-bind-attribute="{'data-tg-remote-noserialize': !variants[{{= variant.index }}].markCreation }">
+    <td class="select">
+      <div class="next-input-wrapper next-input-wrapper--inline">
+        {{ if (variant.markCreation) { }}
+          <input type="checkbox" class="next-checkbox" checked='checked' data-bind="variants[{{= variant.index }}].markCreation">
+        {{ } else { }}
+          <input type="checkbox" class="next-checkbox" data-bind="variants[{{= variant.index }}].markCreation">
+        {{ } }}
+        <span class="next-checkbox--styled"><svg class="next-icon next-icon--size-10 next-icon--blue checkmark"><use xlink:href="#next-checkmark" /></svg></span>
+      </div>
+    </td>
+
+    <td>
+      {{ _.each(variant.optionValues, function(optionValue, i) { }}
+        <span class="option-{{= i + 1 }}">{{= optionValue }}</span>
+        {{ if (_.size(variant.optionValues) - 1 >= 1) { }}
+          {{! delimiter }}
+        {{ } }}
+      {{ }) }}
+
+      <input type="hidden" name="product[variants][][title]" value="{{= variant.title }}">
+      {{ _.each(variant.optionValues, function(optionValue, i) { }}
+        <input type="hidden" name="product[variants][][option{{= variant.optionPositions[i] }}]" value="{{= optionValue }}">
+      {{ }) }}
+      <input type="hidden" name="product[variants][][compare_at_price]" data-bind="compareAtPrice" class="js-no-dirty">
+      <input type="hidden" name="product[variants][][taxable]" data-bind="taxable" class="js-no-dirty">
+      <input type="hidden" name="product[variants][][requires_shipping]" data-bind="requiresShipping" class="js-no-dirty">
+      <input type="hidden" name="product[variants][][weight]" data-bind="weight" class="js-no-dirty">
+      <input type="hidden" name="product[variants][][weight_unit]" data-bind="weightUnit" class="js-no-dirty">
+      {{ if (has_fulfillment_services) { }}
+        <input type="hidden" name="product[variants][][fulfillment_service]" data-bind="fulfillmentService" class="js-no-dirty">
+      {{ } }}
+      <input type="hidden" name="product[variants][][inventory_management]" data-bind="inventoryOptions.inventoryManagement" class="js-no-dirty">
+      <input type="hidden" name="product[variants][][inventory_policy]" data-bind="inventoryPolicy ? 'continue' : 'deny'" class="js-no-dirty">
+    </td>
+
+    <td>
+      <div class="next-input--stylized next-input--has-content">
+        <span class="next-input__add-on next-input__add-on--before">{{! Shopify.CurrencyDB.getCurrency(Shopify.shop.settings.currency).money_symbol }}</span>
+        <input type="text" class="select-all-on-focus next-input next-input--invisible js-money-field" name="product[variants][][price]" data-bind="variants[{{= variant.index }}].price">
+      </div>
+    </td>
+    <td><input type="text" class="select-all-on-focus next-input" name="product[variants][][sku]" data-bind="variants[{{= variant.index }}].sku"></td>
+    <td><input type="text" class="select-all-on-focus next-input" name="product[variants][][barcode]" data-bind="variants[{{= variant.index }}].barcode"></td>
+    <td data-bind-show="inventoryOptions.inventoryManagement"><input type="text" class="select-all-on-focus next-input" name="product[variants][][inventory_quantity]" data-bind="variants[{{= variant.index }}].inventoryQuantity"></td>
+  </tr>
+</script>
+
+      <div class="next-card" id="product-outer-variants" data-tg-refresh="product-outer-variants">
+          <div data-define="{
+            productVariantOptions: new Shopify.ProductVariantOptions(this,
+              [{&quot;position&quot;:1,&quot;name&quot;:&quot;Size&quot;,&quot;values&quot;:[]}],
+              [],
+              {
+                maxOptions: 3,
+                maxOptionNameLength: 255,
+                optionTitleDelimiter: &quot;\u003cspan class=\&quot;type--subdued\&quot;\u003e \u0026bull; \u003c\/span\u003e&quot;,
+                maxVariants: 100,
+                maxOptionLength: 255,
+                hasFulfillmentServices: false
+              }
+            )}" class="section-content" data-context="productVariantOptions">
+                <input type="hidden" name="product[variant][id]" id="product_variant_id">
+
+<div class="next-card__section">
+  <h3 class="next-heading">Pricing</h3>
+
+  <div class="next-grid next-grid--no-outside-padding">
+    <div class="next-grid__cell">
+      <div class="next-input-wrapper"><label class="next-label" for="variant-price">Price</label><div class="next-input--stylized next-input--has-content"><span class="next-input__add-on next-input__add-on--before">Rs.</span><input type="text" name="product[variant][price]" id="variant-price" value="0.00" class="next-input next-input--invisible js-money-field" placeholder="0.00" data-bind="price"></div></div>
+        
+    </div>
+
+    <div class="next-grid__cell">
+      <div class="next-input-wrapper"><label class="next-label" for="variant-compare_at_price">Compare at price</label><div class="next-input--stylized"><span class="next-input__add-on next-input__add-on--before">Rs.</span><input type="text" name="product[variant][compare_at_price]" id="variant-compare_at_price" value="" class="next-input next-input--invisible js-money-field" bind="compareAtPrice"></div></div>
+    </div>
+  </div>
+
+    <div class="next-grid next-grid--no-outside-padding">
+      <div class="next-grid__cell">
+        <div class="next-input-wrapper"><label class="next-label next-label--switch" for="variant-taxable">Charge taxes on this product</label><input type="checkbox" id="variant-taxable" value="1" bind="taxable" class="next-checkbox" checked="checked"><span class="next-checkbox--styled"><svg class="next-icon next-icon--size-10 next-icon--blue checkmark"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-checkmark"></use></svg></span></div>
+        <input type="hidden" name="product[variant][taxable]" id="product_variant_taxable" value="true" bind="taxable">
+      </div>
+    </div>
+
+</div>
+
+<div define="{ inventoryOptions: new Shopify.InventoryOptions(1, null) }" class="next-card__section">
+  <h3 class="next-heading">Inventory</h3>
+
+  <div class="next-grid next-grid--no-outside-padding">
+    <div class="next-grid__cell">
+      <div class="next-input-wrapper"><label class="next-label" for="variant-sku">SKU <span class="note">(Stock Keeping Unit)</span></label><input type="text" name="product[variant][sku]" id="variant-sku" value="" bind="sku" class="next-input"></div>
+    </div>
+    <div class="next-grid__cell">
+      <div class="next-input-wrapper"><label class="next-label" for="variant-barcode">Barcode <span class="note">(ISBN, UPC, GTIN, etc.)</span></label><input type="text" name="product[variant][barcode]" id="variant-barcode" bind="barcode" class="next-input"></div>
+    </div>
+  </div>
+
+  <div class="next-grid next-grid--no-outside-padding">
+    <div class="next-grid__cell">
+      <div class="next-input-wrapper"><label class="next-label" for="variant-inventory-management">Inventory policy</label><div class="next-select__wrapper"><select name="product[variant][inventory_management]" id="variant-inventory-management" class="next-select next-select" bind="inventoryOptions.inventoryManagement"><option value="">Don't track inventory</option>
+<option value="shopify">Shopify tracks this product's inventory</option></select><svg class="next-icon next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-chevron-down"></use></svg></div></div>
+    </div>
+
+    <div class="next-grid__cell next-grid__cell--quarter">
+        <div bind-show="inventoryOptions.inventoryManagementEnabled()" bind-event-click="inventoryOptions.quantityFocused(event)" bind-event-focus="inventoryOptions.quantityFocused(event)" class="hide">
+          <div>
+            <div class="next-input-wrapper"><label class="next-label" for="product_variant_inventory_quantity">Quantity</label><input type="number" name="product[variant][inventory_quantity]" id="product_variant_inventory_quantity" value="1" class="next-input next-input--number quantity-field next-input next-input--number no-spinbox" bind="inventoryOptions.quantity" bind-event-input="inventoryOptions.quantityUpdated()" bind-disabled="!inventoryOptions.allowInventoryAdjustment()" disabled=""></div>
+          </div>
+        </div>
+    </div>
+      <div class="next-grid__cell next-grid__cell--quarter">
+      </div>
+  </div>
+
+  <div class="next-grid next-grid--no-outside-padding hide" bind-show="inventoryOptions.inventoryManagementEnabled()">
+    <div class="next-grid__cell">
+      <div class="next-input-wrapper"><label class="next-label next-label--switch" for="variant-inventory_policy">Allow customers to purchase this product when it's out of stock</label><input type="checkbox" id="variant-inventory_policy" value="1" bind="inventoryPolicy" class="next-checkbox"><span class="next-checkbox--styled"><svg class="next-icon next-icon--size-10 next-icon--blue checkmark"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-checkmark"></use></svg></span></div>
+      <input type="hidden" name="product[variant][inventory_policy]" id="product_variant_inventory_policy" value="deny" bind="inventoryPolicy ? 'continue' : 'deny'">
+    </div>
+  </div>
+</div>
+
+  <div class="next-card__section">
+    <h3 class="next-heading">Shipping</h3>
+    <div class="next-grid next-grid--no-outside-padding next-grid--multi-row">
+      <div class="next-grid__cell next-grid__cell next-grid__cell--half">
+        <div class="next-input-wrapper"><label class="next-label" for="product_variant_weight">Weight</label><div class="next-field__connected-wrapper"><input type="text" name="product[variant][weight]" id="product_variant_weight" value="0.0" bind="weight" class="next-field--connected next-input"><label class="next-label helper--visually-hidden" for="product_variant_weight_unit">Weight</label><div class="next-select__wrapper next-field--connected next-field--connected--no-flex next-input--has-content"><select name="product[variant][weight_unit]" id="product_variant_weight_unit" bind="weightUnit" class="next-select"><option value="lb">lb</option>
+<option value="oz">oz</option>
+<option selected="selected" value="kg">kg</option>
+<option value="g">g</option></select><svg class="next-icon next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-chevron-down"></use></svg></div></div></div>
+      </div>
+
+    </div>
+
+    <div class="next-grid next-grid--no-outside-padding" multi_row="true">
+      <div class="next-grid__cell next-grid__cell--half">
+        <div class="ui-stack ui-stack--wrap ui-stack--vertical">
+          <div class="ui-stack ui-stack--wrap">
+            <div class="next-input-wrapper"><label class="next-label" for="variant-fulfillment-service">Fulfillment service</label><div class="next-select__wrapper next-input--has-content"><select name="product[variant][fulfillment_service]" id="variant-fulfillment-service" bind-event-change="Shopify.Product.fulfillmentServiceChange(this, [], '#variant-inventory-management')" class="next-select next-select" bind="fulfillmentService"><option selected="selected" value="manual">Manual</option></select><svg class="next-icon next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-chevron-down"></use></svg></div></div>
+</div>          <div class="ui-stack ui-stack--wrap">
+            <p bind-show="fulfillmentService != 'manual'" class="hide">You must use the same SKU that your fulfillment service uses for this variant.</p>
+</div></div></div></div>
+    <div class="next-grid next-grid--no-outside-padding">
+      <div class="next-grid__cell">
+        <div class="next-input-wrapper"><label class="next-label next-label--switch" for="variant-requires_shipping">This product requires shipping</label><input type="checkbox" id="variant-requires_shipping" value="1" class="next-checkbox next-checkbox" bind="requiresShipping" checked="checked"><span class="next-checkbox--styled"><svg class="next-icon next-icon--size-10 next-icon--blue checkmark"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-checkmark"></use></svg></span></div>
+        <input type="hidden" name="product[variant][requires_shipping]" id="product_variant_requires_shipping" value="true" bind="requiresShipping">
+      </div>
+    </div>
+  </div>
+
+            <div class="next-card__section">
+  <div class="next-grid next-grid--no-outside-padding">
+    <div class="next-grid__cell">
+      <h2 class="next-heading--quarter-margin">Variants</h2>
+    </div>
+    <div class="next-grid__cell next-grid__cell--no-flex next-grid__cell--vertically-centered">
+      <button name="button" type="button" class="btn btn--link" data-bind-event-click="toggleAutoGenerate()" data-bind-show="autoGenerate" id="product-multiple-options">Add variant</button>
+      <button name="button" type="button" class="btn hide" data-bind-show="!autoGenerate" data-bind-event-click="toggleAutoGenerate()" id="product-multiple-options">Cancel</button>
+    </div>
+  </div>
+
+  <p>Does this product come in multiple variations like size or color?</p>
+</div>
+
+<div class="next-card__section next-card__section--subdued next-card--bottom-rounded-corners hide" data-bind-show="!autoGenerate">
+  <table class="next-table table--no-side-padding table--no-border expanded js-options-table">
+    <thead>
+      <tr>
+        <th class="option-name" width="25%"><span>Option name</span></th>
+        <th class="option-values">Option values<span class="helper--visually-hidden">Separate options with a comma</span></th>
+        <th class="remove"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="js-add-option" data-bind-show="canAddOptions()">
+        <td colspan="3">
+          <button type="button" class="btn" data-bind-event-click="addNewOption()">Add another option</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div data-bind-show="tooManyPotentialVariants()" class="box warning st sb hide">
+    <strong>Warning:</strong> Products can’t have more than 100 variants.
+  </div>
+
+  <div class="ppt hide" data-bind-show="variants.length > 0">
+    <h3>Modify the variants to be created:</h3>
+    <div class="table-wrapper">
+      <table class="ssb sst js-variants-table">
+        <thead>
+          <tr>
+            <th class="select"></th>
+            <th><span class="options-header">Variant</span></th>
+            <th style="width:100px"><span>Price</span></th>
+            <th style="min-width:100px"><span>SKU</span></th>
+            <th style="min-width:100px"><span>Barcode</span></th>
+            <th style="min-width:70px" data-bind-show="inventoryOptions.inventoryManagement" class="hide"><span>Inventory</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+
+      
+<div class="next-card" define="{seoFields: new Shopify.SeoFields(this, {&quot;objectName&quot;:&quot;product&quot;,&quot;originalHandle&quot;:null})}" context="seoFields">
+  <div class="next-card__header">
+    <div class="wrappable">
+      <div class="wrappable__item">
+        <h2 class="next-heading">Search engine listing preview</h2>
+      </div>
+      <div class="wrappable__item wrappable__item--no-flex">
+        <button name="button" type="button" class="btn js-show-edit-website-seo btn--link" bind-show="!isVisible()" bind-event-click="show()" track-click="{category: 'Edit website seo', action: 'Edit product page seo'}">Edit website SEO</button>
+     </div>
+   </div>
+  </div>
+
+  <section class="next-card__section">
+    <div class="google-preview hide" bind-show="shouldShowGooglePreview()">
+      <span class="google__title" bind="googleTitle()"></span>
+      <div class="google__url">
+        https://abhi-1.myshopify.com/products/<span bind="googlePath()"></span>
+      </div>
+      <div class="google__description" bind="_.unescape(googleDescription())"></div>
+    </div>
+
+    <p bind-show="!shouldShowGooglePreview()" bind="missingFieldText()" class="">Add a title and description to see how this product might appear in a search engine listing.</p>
+  </section>
+
+  <div class="next-card__section hide" bind-show="isVisible()">
+    <div class="ui-form__section">
+      <div class="next-input-wrapper"><div class="ui-form__label-wrapper"><label class="next-label" for="seo-title-tag">Page title</label><span class="type--subdued" bind="titleCharsRemainingText()">0 of 70 characters used</span></div><input id="seo-title-tag" bind="object.seo_title" bind-placeholder="titlePlaceholder()" editable-placeholder="true" class="next-input" size="30" type="text" name="product[metafields_global_title_tag]" placeholder=""></div>
+
+      <div class="next-input-wrapper"><div class="ui-form__label-wrapper"><label class="next-label" for="seo-description-tag">Meta description</label><span class="type--subdued" bind="descriptionCharsRemainingText()">0 of 160 characters used</span></div><textarea id="seo-description-tag" bind="object.seo_description" bind-placeholder="descriptionPlaceholder()" editable-placeholder="true" class="next-textarea" name="product[metafields_global_description_tag]" placeholder=""></textarea></div>
+
+        <div class="ui-form__section">
+          <div class="next-input-wrapper"><label class="next-label" for="object-handle">URL and handle</label><div class="next-input--stylized"><span class="next-input__add-on next-input__add-on--before">https://abhi-1.myshopify.com/products/</span><input id="object-handle" bind="newHandle" bind-placeholder="defaultHandle()" editable-placeholder="true" class="next-input next-input--invisible" size="30" type="text" name="product[handle]" placeholder=""></div></div>
+
+</div></div>  </div>
+</div>
+
+  </div>
+
+  <div class="next-grid__cell next-grid__cell--third">
+
+
+      <div class="next-card next-card--aside visibility">
+  <section class="next-card__section">
+    <div class="next-grid next-grid--no-padding next-grid--vertically-centered">
+      <div class="next-grid__cell">
+        <h2 class="next-heading next-heading--no-margin">Visibility</h2>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="next-card__section" style="padding-top: 15px; padding-bottom: 15px;" define="{channel85990280Publishable: new Shopify.Publishable(true, $context.previewable)}" context="channel85990280Publishable">
+  <div class="next-grid next-grid--compact next-grid--no-outside-padding next-grid--vertically-centered">
+
+    <div class="next-grid__cell">
+      <div class="next-input-wrapper">
+            <input type="hidden" name="product[publications][][id]" id="product_publications__id">
+            <input type="hidden" name="product[publications][][channel_id]" id="product_publications__channel_id" value="85990280">
+            <input type="hidden" name="product[publications][][published]" id="product_publications__published" value="true" bind="isAlreadyPublished()" bind-disabled="hasDate()" disabled="">
+          <div class="next-input-wrapper"><label class="next-label next-label--switch" for="ispublished-85990280">Online store</label><input type="checkbox" name="Online Store" id="ispublished-85990280" value="1" bind-checked="isAlreadyPublished()" bind-event-click="toggleVisibility(this)" class="next-checkbox" checked="checked"><span class="next-checkbox--styled"><svg class="next-icon next-icon--size-10 next-icon--blue checkmark"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-checkmark"></use></svg></span></div>
+      </div>
+    </div>
+    <div class="next-grid__cell next-grid__cell--no-flex">
+      <div class="next-grid next-grid--no-outside-padding next-grid--compact next-grid--vertically-centered">
+          <div class="next-grid__cell next-grid__cell--no-flex">
+            <a class="block tooltip tooltip-right-align tooltip-bottom tooltip-ico visibility-options__action" bind-event-click="toggleDate()">
+              <svg class="next-icon next-icon--color-blue next-icon--size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-calendar"></use></svg>
+              <div class="tooltip-container">
+                <span class="tooltip-label">Set publish date</span>
+              </div>
+            </a>
+          </div>
+
+       </div>
+    </div>
+  </div>
+
+    <span bind-show="isFuturePublished()" class="block st type--subdued hide">Will be published on <span bind="hasDate() ? publishDate().format('YYYY-MM-DD h:mma z') : ''">2016-10-28 2:03am IST</span></span>
+      <input type="hidden" name="product[publications][][published_at]" id="product_publications__published_at" value="Fri Oct 28 2016 02:03:00 GMT+0530" bind="publishDateStringInShop()" class="js-no-dirty">
+
+    <div class="st hide" id="publishable_fields" bind-show="dateToggled">
+      <p class="type--subdued sb">Publish this product on</p>
+      <div class="next-grid next-grid--no-outside-padding next-grid--vertically-centered">
+        <div class="next-grid__cell">
+          <div class="next-input-wrapper"><div class="next-field__connected-wrapper">
+            <input type="text" id="object-published-on" value="2016-10-28" class="next-field--connected next-input input-date-picker hasDatepicker" placeholder="Date" define="{datePicker: new Shopify.DatePicker(this)}">
+            <input type="text" id="object-published-on-time" value="2:03am" placeholder="Time" define="{timePicker: new Shopify.TimePicker(this)}" class="next-field--connected next-input ui-timepicker-input" autocomplete="off">
+</div></div>          <div define="{dateTimeHelper: new Shopify.DateTimeHelper(datePicker, timePicker)}"></div>
+        </div>
+        <a bind-event-click="markAsHidden()" class="btn btn--plain btn--plain--flush-right">
+          <svg class="next-icon next-icon--color-blue next-icon--size-10"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-remove"></use></svg>
+        </a>
+      </div>
+    </div>
+</section>
+
+
+</div>
+
+
+    <div class="next-card next-card--aside">
+      <header class="next-card__header">
+        <h3 class="next-heading">Organization</h3>
+      </header>
+
+      <section class="next-card__section">
+        <div class="next-input-wrapper">
+          <label class="next-label" for="product_product_type">Product type</label>
+          
+<script type="text/template" id="autocomplete-header-suggestion-template">
+    <li>
+    <a class="next-list__item next-list__item--promoted-action"
+      selectable
+      data-bind-event-click="selectHeader(event)">
+      <div class="next-grid next-grid--no-outside-padding next-grid--compact">
+        <div class="next-grid__cell next-grid__cell--no-flex next-grid__cell--vertically-centered">
+          <svg style="overflow: visible; /* fixes clipping in Chrome */" class="next-icon next-icon--size-12 next-icon next-icon--12 block"><use xlink:href="#next-add-circle" /></svg>
+        </div>
+        <div class="next-grid__cell">
+          <strong>Add</strong> {{= input }}
+        </div>
+      </div>
+    </a>
+  </li>
+
+</script>
+
+<script type="text/template" id="autocomplete-suggestions-list-template">
+  {{ _.each(suggestions, function(suggestion, index) { }}
+    <li>
+      <a class="next-list__item"
+        selectable
+        data-bind-event-click="selectSuggestion({{= index + indexStart }}, event)"
+        data-bind-class="{ 'next-list__item--is-applied': isApplied({{= index + indexStart }}) }">
+        {{= suggestion }}
+      </a>
+    </li>
+  {{ }) }}
+</script>
+
+<script type="text/template" id="autocomplete-v2-suggestions-list-with-toggle-template">
+  {{ _.each(suggestions, function(suggestion, index) { }}
+    <li>
+      <a class="next-list__item"
+        selectable
+        data-bind-event-click="selectSuggestion({{= JSON.stringify(_.pick(suggestion, [displayKey, 'id'])) }}, event)"
+        data-bind-class="{ 'next-list__item--is-applied': isApplied({{= suggestion.id }}) }">
+        <div class="next-grid next-grid--no-outside-padding next-grid--compact">
+          <div class="next-grid__cell next-grid__cell--no-flex">
+            <svg class="next-icon next-icon--size-12"><use xlink:href="#next-checkmark" /></svg>
+          </div>
+          <div class="next-grid__cell">
+            {{= suggestion[displayKey] }}
+          </div>
+        </div>
+      </a>
+    </li>
+  {{ }) }}
+</script>
+
+<script type="text/template" id="autocomplete-no-suggestions-template">
+  <li>
+    <div class="next-popover__section">
+      <p class="type--subdued tc">No results found</p>
+    </div>
+  </li>
+</script>
+
+<script type="text/template" id="autocomplete-v2-no-results-template">
+  {{ if (input) { }}
+      <li>
+    <a class="next-list__item next-list__item--promoted-action"
+      selectable
+      data-bind-event-click="selectHeader(event)">
+      <div class="next-grid next-grid--no-outside-padding next-grid--compact">
+        <div class="next-grid__cell next-grid__cell--no-flex next-grid__cell--vertically-centered">
+          <svg style="overflow: visible; /* fixes clipping in Chrome */" class="next-icon next-icon--size-12 next-icon next-icon--12 block"><use xlink:href="#next-add-circle" /></svg>
+        </div>
+        <div class="next-grid__cell">
+          <strong>Add</strong> {{= input }}
+        </div>
+      </div>
+    </a>
+  </li>
+
+  {{ } }}
+</script>
+
+
+<script type="text/template" id="autocomplete-v2-results-template">
+    {{ if (firstPage && !hasMatchingSuggestion && input) { }}
+      <li>
+    <a class="next-list__item next-list__item--promoted-action"
+      selectable
+      data-bind-event-click="selectHeader(event)">
+      <div class="next-grid next-grid--no-outside-padding next-grid--compact">
+        <div class="next-grid__cell next-grid__cell--no-flex next-grid__cell--vertically-centered">
+          <svg style="overflow: visible; /* fixes clipping in Chrome */" class="next-icon next-icon--size-12 next-icon next-icon--12 block"><use xlink:href="#next-add-circle" /></svg>
+        </div>
+        <div class="next-grid__cell">
+          <strong>Add</strong> {{= input }}
+        </div>
+      </div>
+    </a>
+  </li>
+
+  {{ } }}
+
+  {{ _.each(suggestions, function(suggestion) { }}
+    <li>
+      <a class="next-list__item"
+        selectable
+        data-bind-event-click="selectSuggestion({{= JSON.stringify(suggestion) }}, event)">
+        {{= suggestion }}
+      </a>
+    </li>
+  {{ }) }}
+
+</script>
+
+<script type="text/template" id="autocomplete-v2-tag-results-template">
+  {{ if (firstPage && !input) { }}
+    <li>
+      <h3 class="next-heading next-heading--micro-uppercase-bordered">Frequently used tags</h3>
+    </li>
+  {{ } }}
+    {{ if (firstPage && !hasMatchingSuggestion && input) { }}
+      <li>
+    <a class="next-list__item next-list__item--promoted-action"
+      selectable
+      data-bind-event-click="selectHeader(event)">
+      <div class="next-grid next-grid--no-outside-padding next-grid--compact">
+        <div class="next-grid__cell next-grid__cell--no-flex next-grid__cell--vertically-centered">
+          <svg style="overflow: visible; /* fixes clipping in Chrome */" class="next-icon next-icon--size-12 next-icon next-icon--12 block"><use xlink:href="#next-add-circle" /></svg>
+        </div>
+        <div class="next-grid__cell">
+          <strong>Add</strong> {{= input }}
+        </div>
+      </div>
+    </a>
+  </li>
+
+  {{ } }}
+
+  {{ _.each(suggestions, function(suggestion) { }}
+    <li>
+      <a class="next-list__item"
+        selectable
+        data-bind-event-click="selectSuggestion({{= JSON.stringify(suggestion) }}, event)">
+        {{= suggestion }}
+      </a>
+    </li>
+  {{ }) }}
+
+</script>
+
+<script type="text/template" id="country-autocomplete-list-template">
+  {{ _.each(suggestions, function(suggestion, index) { }}
+  <li>
+    <a class="next-list__item"
+       selectable
+       data-bind-event-click="selectSuggestion({{= index + indexStart }}, event)"
+       data-bind-class="{ 'next-list__item--is-applied': isApplied({{= index + indexStart }}) }">
+      {{= suggestion.name }}
+    </a>
+  </li>
+  {{ }) }}
+</script>
+<div class="next-popover__container next-popover__container--full-width" data-context="product_typeAutocomplete" data-define="{ 'product_typeAutocomplete': new Shopify.AutocompleteV2.SingleSelectRemoteSourceAutocomplete(this, &quot;\/admin\/products\/types?limit=5000&quot;, &quot;types&quot;, {&quot;maxLength&quot;:255}) }">
+    <div>
+  <div class="next-field__connected-wrapper">
+    <input class="next-input next-field--connected" placeholder="Shirts" data-bind="input" data-bind-event-keyup="inputChanged()" size="30" type="text" name="product[product_type]" id="product_product_type" aria-expanded="false" aria-haspopup="false" aria-owns="popover-dropdown-2" aria-controls="popover-announce-selected" role="combobox" aria-autocomplete="list" aria-activedescendant="selected-option-1">
+      <a class="btn btn--icon next-field--connected next-field--connected--no-flex" data-bind-event-click="togglePopover(event)">
+        <svg class="next-icon next-icon--color-slate-lighter next-icon--size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-arrow-double-16"></use></svg>
+      </a>
+  </div>
+
+  <div class="tooltip-error attached-to-bottom hide" data-bind-show="errorMessage">
+    <ul class="error-list">
+      <li data-bind="errorMessage"></li>
+    </ul>
+  </div>
+</div>
+
+<div data-popover-horizontally-relative-to-closest=".next-card" class="next-popover next-popover--full-width next-popover--do-not-show-on-focus" data-popover-css-vertical-margin="15" data-popover-css-horizontal-margin="20" data-popover-css-max-height="300" data-popover-css-max-width="10000" id="next-popover--1" aria-labelledby="product_product_type" aria-expanded="false" style="margin-right: 0px; margin-left: 0px;"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+    <ul class="js-autocomplete-suggestions next-list next-list--compact next-list--toggles" role="listbox" id="popover-dropdown-2"></ul>
+<div class="next-popover__section hide" data-bind-show="loadingResults">
+  <p class="type--subdued tc">
+    <span class="next-spinner">
+      <svg class="next-icon next-icon--size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-spinner"></use></svg>
+    </span>
+    Loading…
+  </p>
+</div>
+
+</div></div></div></div></div>
+        </div>
+        <div class="next-input-wrapper">
+          <label class="next-label" for="product_vendor">Vendor</label>
+          <div class="next-popover__container next-popover__container--full-width" data-context="vendorAutocomplete" data-define="{ 'vendorAutocomplete': new Shopify.AutocompleteV2.SingleSelectRemoteSourceAutocomplete(this, &quot;\/admin\/products\/vendors&quot;, &quot;vendors&quot;, {&quot;maxLength&quot;:255}) }">
+    <div>
+  <div class="next-field__connected-wrapper">
+    <input class="next-input next-field--connected" placeholder="Nike" data-bind="input" data-bind-event-keyup="inputChanged()" size="30" type="text" name="product[vendor]" id="product_vendor" aria-expanded="false" aria-haspopup="false" aria-owns="popover-dropdown-4" aria-controls="popover-announce-selected" role="combobox" aria-autocomplete="list" aria-activedescendant="selected-option-3">
+      <a class="btn btn--icon next-field--connected next-field--connected--no-flex" data-bind-event-click="togglePopover(event)">
+        <svg class="next-icon next-icon--color-slate-lighter next-icon--size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-arrow-double-16"></use></svg>
+      </a>
+  </div>
+
+  <div class="tooltip-error attached-to-bottom hide" data-bind-show="errorMessage">
+    <ul class="error-list">
+      <li data-bind="errorMessage"></li>
+    </ul>
+  </div>
+</div>
+
+<div data-popover-horizontally-relative-to-closest=".next-card" class="next-popover next-popover--full-width next-popover--do-not-show-on-focus" data-popover-css-vertical-margin="15" data-popover-css-horizontal-margin="20" data-popover-css-max-height="300" data-popover-css-max-width="10000" id="next-popover--2" aria-labelledby="product_vendor" aria-expanded="false" style="margin-right: 0px; margin-left: 0px;"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+    <ul class="js-autocomplete-suggestions next-list next-list--compact next-list--toggles" role="listbox" id="popover-dropdown-4"></ul>
+<div class="next-popover__section hide" data-bind-show="loadingResults">
+  <p class="type--subdued tc">
+    <span class="next-spinner">
+      <svg class="next-icon next-icon--size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-spinner"></use></svg>
+    </span>
+    Loading…
+  </p>
+</div>
+
+</div></div></div></div></div>
+        </div>
+      </section>
+
+      <section class="next-card__section">
+
+        <label for="collections" class="next-label">Collections</label>
+<div id="js-collections" data-tg-refresh="js-collections" data-define="{productCollections: new Shopify.ProductCollectionDisplay(this)}" data-context="productCollections">
+
+    <div class="next-popover__container next-popover__container--full-width" data-context="remoteMultiSelectAutocomplete" data-define="{ 'remoteMultiSelectAutocomplete': new Shopify.AutocompleteV2.RemoteMultiSelectAutocomplete(this, &quot;\/admin\/custom_collections\/dropdown&quot;, $node, &quot;results&quot;, {&quot;values&quot;:[],&quot;position&quot;:&quot;top&quot;}) }">
+    <div class="next-input-wrapper"><div class="next-input--stylized"><span class="next-input__add-on next-input__add-on--before"><svg class="next-icon next-icon--color-slate-lightest next-icon--size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-search-16"></use></svg></span><input class="next-input next-input--invisible next-input js-no-dirty next-input--invisible" placeholder="Search for collections" id="collections" data-bind="input" data-bind-event-keyup="inputChanged()" size="30" type="text" aria-expanded="false" aria-haspopup="false" aria-owns="popover-dropdown-6" aria-controls="popover-announce-selected" role="combobox" aria-autocomplete="list" aria-activedescendant="selected-option-5"></div></div>
+    <div class="tooltip-error attached-to-bottom hide" data-bind-show="errorMessage">
+      <ul class="error-list">
+        <li data-bind="errorMessage"></li>
+      </ul>
+    </div>
+<div data-popover-horizontally-relative-to-closest=".next-card" class="next-popover next-popover--full-width next-popover--do-not-show-on-focus" data-popover-css-vertical-margin="15" data-popover-css-horizontal-margin="20" data-popover-css-max-height="300" data-popover-css-max-width="10000" id="next-popover--3" aria-labelledby="collections" aria-expanded="false" style="margin-right: 0px; margin-left: 0px;"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+    <ul class="js-autocomplete-suggestions next-list next-list--compact next-list--toggles" role="listbox" id="popover-dropdown-6"></ul>
+<div class="next-popover__section hide" data-bind-show="loadingResults">
+  <p class="type--subdued tc">
+    <span class="next-spinner">
+      <svg class="next-icon next-icon--size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-spinner"></use></svg>
+    </span>
+    Loading…
+  </p>
+</div>
+
+</div></div></div></div></div>
+
+  <input type="hidden" name="product[collection_ids][]" data-bind-disabled="hasCollections()">
+
+  <div id="product-collections" data-tg-refresh="product-collections">
+
+    <ul class="js-collection-list product-collections-list next-list next-list--plain-divided next-list--row-hover next-list--no-vertical-padding">
+    </ul>
+
+          <div id="add-to-collection" data-bind-show="!hasCustomCollections() &amp;&amp; true">
+            <p class="next-input__help-text">Add this product to a collection so it’s easy to find in your store.</p>
+          </div>
+  </div>
+</div>
+
+      </section>
+
+      <section class="next-card__section">
+
+        <div class="next-grid next-grid--no-outside-padding">
+  <div class="next-grid__cell">
+    <label for="tags" class="next-label">Tags</label>
+    <script type="text/template" id="display-one-tag">
+      <li class="next-token">
+        <span class="next-token__label">{{= tag }}</span>
+
+        <a bind-event-click="removeTag(this)" class="next-token__remove">
+          <input type="hidden" name="product[tags][]" value="{{= tag }}">
+          <span class="next-token__remove__icon"></span>
+        </a>
+      </li>
+    </script>
+  </div>
+  <div class="next-grid__cell next-grid__cell--no-flex">
+    <a bind-event-click="tagDisplay.showAllTagsModal.show()">View all tags</a>
+  </div>
+</div>
+
+
+        <div data-define="{tagDisplay: new Shopify.TagDisplay(this)}" data-context="tagDisplay" id="tags-event-bus">
+          <a data-define="{ showAllTagsModal: new Shopify.Modal(this) }" href="/admin/products/tags" type="text/html" class="modal_source" style="display: none"></a>
+
+          <div class="next-popover__container next-popover__container--full-width" data-context="tagsAutocomplete" data-define="{ 'tagsAutocomplete': new Shopify.AutocompleteV2.TagsAutocomplete(this, &quot;\/admin\/products\/tags&quot;, $node, {&quot;values&quot;:[],&quot;maxLengthError&quot;:&quot;Tag exceeds the maximum length of 255 characters&quot;,&quot;maxLength&quot;:255,&quot;duplicateError&quot;:&quot;Oops, you've already used %s&quot;,&quot;position&quot;:&quot;top&quot;}) }">
+    <div>
+  <div class="next-field__connected-wrapper">
+    <input class="next-input next-field--connected js-no-dirty" placeholder="Vintage, cotton, summer" id="tags" data-bind="input" data-bind-event-keyup="inputChanged()" size="30" type="text" aria-expanded="false" aria-haspopup="false" aria-owns="popover-dropdown-8" aria-controls="popover-announce-selected" role="combobox" aria-autocomplete="list" aria-activedescendant="selected-option-7">
+  </div>
+
+  <div class="tooltip-error attached-to-bottom hide" data-bind-show="errorMessage">
+    <ul class="error-list">
+      <li data-bind="errorMessage"></li>
+    </ul>
+  </div>
+</div>
+
+<div data-popover-horizontally-relative-to-closest=".next-card" class="next-popover next-popover--full-width next-popover--do-not-show-on-focus" data-popover-css-vertical-margin="15" data-popover-css-horizontal-margin="20" data-popover-css-max-height="300" data-popover-css-max-width="10000" id="next-popover--4" aria-labelledby="tags" aria-expanded="false" data-popover-preferred-position="top" style="margin-right: 0px; margin-left: 0px;"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+    <ul class="js-autocomplete-suggestions next-list next-list--compact next-list--toggles" role="listbox" id="popover-dropdown-8"></ul>
+<div class="next-popover__section hide" data-bind-show="loadingResults">
+  <p class="type--subdued tc">
+    <span class="next-spinner">
+      <svg class="next-icon next-icon--size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-spinner"></use></svg>
+    </span>
+    Loading…
+  </p>
+</div>
+
+</div></div></div></div></div>
+          <input type="hidden" name="product[tags][]" data-bind-disabled="hasTags()">
+
+          <ul class="js-tag-list next-token-list st">
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+
+
+  </div>
+</div>
+
+      </div>
+    </div>
