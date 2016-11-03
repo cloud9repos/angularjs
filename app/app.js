@@ -11,14 +11,24 @@
     app.config(["$stateProvider",
                 "$urlRouterProvider",
                 function($stateProvider, $urlRouterProvider) {
-                    $urlRouterProvider.otherwise("/products")
+                    $urlRouterProvider.otherwise("/")
                     
                     $stateProvider
+                        .state("home", {
+                            url: "/",
+                            templateUrl: "app/welcomeView.html"
+                        })
+                        
                         //products
                         .state("productList", {
                             url: "/products",
                             templateUrl: "app/products/productListView.html",
                             controller: "ProductListCtrl as vm"
+                        })
+                        .state("productEdit", {
+                            url: "/products/edit/:productId",
+                            templateUrl: "app/products/productEditView.html",
+                            controller: "ProductEditCtrl as vm"
                         })
                 }])
 }());
