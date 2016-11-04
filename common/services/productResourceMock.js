@@ -11,7 +11,7 @@
     app.run(function($httpBackend) {
         var products = [
             {
-                " productId": 1,
+                "productId": 1,
                 "productName": "Leaf Rake",
                 "productCode": "GDN-11",
                 "releaseDate": "march 19",
@@ -23,7 +23,7 @@
                 "imageUrl": "images/image1.jpg"
             },
             {
-                " productId": 5,
+                "productId": 5,
                 "productName": "Hammer",
                 "productCode": "GDN-12",
                 "releaseDate": "march 21",
