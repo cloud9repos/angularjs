@@ -18,5 +18,14 @@
         else {
             vm.title = "New Product"
         }
+        
+        vm.open = function($event) {
+            console.log("check")
+            $event.preventDefault()
+            $event.stopPropagation()
+            
+            vm.opened = !vm.opened
+            console.log("vm.opened", vm.opened)
+        }
     }
 }())

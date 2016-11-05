@@ -1,0 +1,9 @@
+{
+
+  "name": "angularjstraining",
+  
+  "dependencies": {
+    "angular-bootstrap": "*"
+    "angular-ui-utils": "*"
+  }
+}
